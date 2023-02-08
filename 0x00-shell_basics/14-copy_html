@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -name "*.html" -exec bash -c 'if [ ! -f ../"$1" ] || [ "$1" -nt ../"$1" ]; then cp "$1" ../; fi' _ {} \;
+cp -a *.html . ..
